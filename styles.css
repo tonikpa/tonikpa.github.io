@@ -60,7 +60,7 @@ body{
     font-size: 18px;
 }
 
-.content > img {
+.content > img, .content > video {
     max-height: 120%;
     max-width: 100%;
     display: block;
