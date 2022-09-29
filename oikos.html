@@ -16,25 +16,31 @@
     <div class="title">
         OIKOS
     </div>
-    <div class="scroller" type="button" onClick="document.getElementById('after').scrollIntoView({behavior: 'smooth', block:'end'});">
+    <div class="scroller" type="button" onClick="document.getElementById('after').scrollIntoView({behavior: 'smooth', block:'start'});">
         ⬇
     </div>
     <div class="background">
-        <!-- <video autoplay muted loop>
-            <source src="angra.mp4" type="video/mp4">
-        </video> -->
+        <video autoplay muted loop playsinline>
+            <source src="media/oikos-extended.mp4" type="video/mp4">
+        </video>
     </div>
 
-    <div id="after" class="after-background">
-        <div class="content">
+    <div class="after-background">
+        <div id="after" class="content">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et luctus nulla. Nulla rutrum auctor ligula, eget faucibus lacus accumsan quis.
-                sapien massa, ultricies in placerat quis, gravida id orci. Proin lobortis tortor at pellentesque suscipit.
+                Oikos is a work in progress game/experience. 
+                Heavily inspired by Mark Z Danielewski’s The House of Leaves and Jorge Luis Borges’ The House of Asterion, the game traps the player in an infinite maze of rooms, and the objective is finding a way out.
             </p>
+            <video autoplay muted loop playsinline>
+                <source src="media/oikos-short.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline>
+                <source src="media/oikos-walking.mp4" type="video/mp4">
+            </video>
             <p>  
-                Praesent ac dictum odio, a auctor lectus. Donec urna lorem, vulputate at tempor vel, molestie volutpat ligula. 
-                Pellentesque feugiat diam nec nisi bibendum accumsan. Aliquam augue mi, malesuada eu tincidunt vitae, elementum dapibus tortor. 
-                Aliquam in tortor vitae arcu lacinia interdum. 
+                The game relies on procedural generation to evoke feelings of endlessness and imprisonment, creating architecturally impossible maze. 
+                If walking in the wrong direction, the player will find themselves encountering an infinite set of rooms and doors. 
+                It uses its minimalist art style, paired with custom fadable shaders, to create a meditative experience and contrast with the maximalism of an infinite house.
             </p>
         </div>  
     </div>

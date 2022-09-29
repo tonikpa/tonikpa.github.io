@@ -36,28 +36,19 @@ body{
 
     width: max(55%, 770px);
     /* width: 55%; */
-    /* FIX THIS SHIT */
     padding-top: 10%; 
     padding-bottom: 20%;
-}
 
-@media only screen and (max-width: 920px) {
-    .content{
-        grid-template-columns: 100%;
-        width: 60%;
-        row-gap: 3%;
-    }
-
-    .after-background{
-        padding-bottom: 40vh;;
-    }
+    justify-content: center;
 }
 
 .content > p, .content > div {
     text-align: justify;
-    margin-top: 0;
-    margin-bottom: auto;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    margin: auto;
     font-size: 18px;
+
 }
 
 .content > img, .content > video {
@@ -73,11 +64,37 @@ body{
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 video {
     display: block;
-    margin: 0 auto;
+    margin: auto auto;
+}
+
+.background > video {
+    display: block;
+    margin: auto auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+@media screen and (max-aspect-ratio: 1920/1080) {
+    .background > video {
+      height: 100%;
+    }
+}
+
+@media screen and (min-aspect-ratio: 1920/1080) {
+    .background > video {
+    width: 100%;
+    }
 }
 
 .after-background{
@@ -103,4 +120,27 @@ video {
     text-align: center;
 
     cursor: pointer;
+}
+
+@media only screen and (max-device-width: 920px) {
+    .content{
+        grid-template-columns: 100%;
+        width: 65%;
+        row-gap: 4vh;
+        min-height: 70vh;
+        margin: auto;
+    }
+
+    .content > p, .content > div {
+        font-size: 30px;
+    }
+
+    .after-background{
+        padding-bottom: 20vh;;
+    }
+
+    .sidebar > div > a {
+        margin-top: 60%;
+        font-size: 70px;
+    }
 }
