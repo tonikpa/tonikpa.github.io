@@ -122,6 +122,12 @@ video {
     cursor: pointer;
 }
 
+a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
 @media screen and (max-device-width: 920px) {
     .content{
         grid-template-columns: 100%;
