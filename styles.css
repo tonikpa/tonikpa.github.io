@@ -1,152 +1,19 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family:  Helvetica, Arial, sans-serif;
-}
-
-.sidebar {
-    position: fixed;
-    display: block;
-    padding: 3% 2%;
-}
-
-.sidebar > div > a {
-    text-decoration: none;
-    color: black;
-    font-size: 40px;
-    font-weight: 800;
+.general{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
+    font-size: 72px;
+    font-weight: bold;
     color: black;
-    font-size: 40px;
-    font-weight: 800;
-    position: absolute;
-    bottom: 0;
-    padding: 1% 2%;
+    justify-self: center;
+    align-self: center;
 }
 
 .content {
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: 47.5% 47.5%;
-    column-gap: 5%;
-    row-gap: 7.5%;
-
-    width: max(55%, 770px);
-    /* width: 55%; */
-    padding-top: 10%; 
-    padding-bottom: 20%;
-
-    justify-content: center;
-}
-
-.content > p, .content > div {
-    text-align: justify;
-    /* margin-top: auto;
-    margin-bottom: auto; */
-    margin: auto;
-    font-size: 18px;
-
-}
-
-.content > img, .content > video {
-    max-height: 120%;
-    max-width: 100%;
-    display: block;
-}
-
-.background{
-    position:absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-video {
-    display: block;
-    margin: auto auto;
-}
-
-.background > video {
-    display: block;
-    margin: auto auto;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@media screen and (max-aspect-ratio: 1920/1080) {
-    .background > video {
-      height: 100%;
-    }
-}
-
-@media screen and (min-aspect-ratio: 1920/1080) {
-    .background > video {
-    width: 100%;
-    }
-}
-
-.after-background{
-    padding-top: 100vh;
-    padding-bottom: 0;
-    /* height: 100%; */
-}
-
-.scroller {
-    color:antiquewhite;
-    font-size: 36px;
-    font-weight: 800;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-
-    background-color: black;
-    border-radius: 100%;
-    width: 56px;
-    height: 56px;
-    text-align: center;
-
-    cursor: pointer;
-}
-
-a {
-    color: black;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-@media screen and (max-device-width: 920px) {
-    .content{
-        grid-template-columns: 100%;
-        width: 65%;
-        row-gap: 4vh;
-        min-height: 70vh;
-        margin: auto;
-    }
-
-    .content > p, .content > div {
-        font-size: 30px;
-    }
-
-    .after-background{
-        padding-bottom: 20vh;;
-    }
-
-    .sidebar > div > a {
-        margin-top: 60%;
-        font-size: 70px;
-    }
+    margin-top: 64px;
+    justify-self: center;
+    align-self: center;
 }
