@@ -88,7 +88,8 @@ const data = {
             "before": "#BIOME#",
             "after": [
                 "Seas", "Oceans", "River", "Ponds", "Walmart Parking Lots", "Savannas","Grasslands", "Taigas", "Tundras", "Skies", "Deserts", "Tropical Rainforests",
-                "Forests", "Jungles", "Plateaus", "Coral Reefs", "Marshes", "Swamps", "Floridas", "Shrublands", "Bogs", "Mangrove Swamps", "Abyssal Sea", "Mountains", "Sewers", "Lakes", "Lochs", "Underground Tunnels",
+                "Forests", "Jungles", "Plateaus", "Coral Reefs", "Marshes", "Swamps", "Floridas", "Shrublands", "Bogs", "Mangrove Swamps", "Abyssal Sea", "Mountains", 
+                "Sewers", "Lakes", "Lochs", "Underground Tunnels", "Suburbs", "Caves", "Shores"
             ]
         },
 
@@ -160,8 +161,8 @@ const data = {
                 "#BIOME# of #COUNTRY#",
                 "#BIOME# of #COUNTRY#",
                 "#BIOME# of #COUNTRY#",
-                "#BIOME# of #COUNTRY#",
-                "#BIOME# of #COUNTRY#",
+                "#BIOME2# of #COUNTRY#",
+                "#BIOME2# of #COUNTRY#",
                 "#SPECIALBIOME#",
             ]
         },
@@ -179,12 +180,23 @@ const data = {
                 "Samoa","San Marino","Sao Tome & Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Sudan","Spain","Sri Lanka",
                 "Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu",
                 "Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe",
+                "Ohio", "Brasil",
             ]
         },
         {
             "before": "#SPECIALBIOME#",
             "after": [
-                "Arctic polar regions", "White House", "dark side of the moon", "suburbs of Ohio", "shadows", "nightmares of children", "dark web", 
+                "Arctic polar regions", "White House", "dark side of the moon", "nightmares of children", "dark web", "chuck e cheese restaurants", "roswell asteroid crater",
+                "international space station", "cabins in the woods", "pyramids of Egypt", "Mesoamerican pyramids",
+
+            ]
+        },
+        {
+            "before": "#BIOME2#",
+            "after": [
+                "shadows", "abandoned wells", "abandoned buildings", "shadowy street alleys", "hospitals", "farms", "cemeteries", "amusement parks", "libraries",
+                "subway stations", "liminal spaces", "casinos", "windmills", "cathedrals", "churches", "beaches", "waterfalls", "castles", "gardens", "under the bridges",
+                "dams", "skyscrapers", "attics", "docks", "shipyards", 
             ]
         },
         // =========== BEHAVIOR ==============
@@ -219,31 +231,37 @@ const data = {
             "after": [
                 "hungry", "lonely", "feeling sad", "feeling evil", "it's full moon", "the day is hot", "the day is cold", "scared",
                 "annoyed", "frustrated", "pollen count is high", "it feels like it", "it's the holidays season", "is being observed",
+                "horny", "excited", "nostalgic", "greedy", "wistful" 
             ]
         },
         {
             "before": "#FOOD#",
             "after": [
                 "cattle", "cows", "children", "old people", "teenagers", "canned food", "its own children", "sound", "the silence", "dreams",
-                "fire", "plastic", "colors", "garbage", "chickens", "fish"
+                "fire", "plastic", "colors", "garbage", "chickens", "fish", "virgins", "grass", "bricks", "cement", "wood", "coconuts", 
+                "fear"
             ]
         },
         {
             "before": "#TRICK#",
             "after": [
-                "doing its bidding", "suicide", "sex", "going mad", "getting lost in the woods", "sleeping"
+                "doing its bidding", "suicide", "sex", "going mad", "getting lost in the woods", "sleeping", "doing self-harm", "drowning themselves",
+                "killing other people", "kidnapping children",
             ]
         },
         {
             "before": "#HIDE#",
             "after": [
-                "inside people's shoes", "in the shadows", "under beds", "inside wardrobes", "in plain sight", "on the walls", "in basements", "in the trees"
+                "inside people's shoes", "in the shadows", "under beds", "inside wardrobes", "in plain sight", "on the walls", "in basements", "in the trees",
+                "in cemeteries", "behind waterfalls", "inside trees", "under rocks", "abandoned houses", "under sea shells"
             ]
         },
         {
             "before": "#TARGET#",
             "after": [
-                "children", "old people", "teenagers", "unsuspecting adults", "non-believers", "people dressed in white", "house dogs", "house cats"
+                "children", "old people", "teenagers", "unsuspecting adults", "non-believers", "people dressed in white", "house dogs", "house cats", "theists",
+                "women", "men", "virgins", "pets", "people born in july"
+
             ]
         },
     ]
