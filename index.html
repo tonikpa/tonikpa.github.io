@@ -2,28 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>folklore</title>
+    <title>you, the memorious</title>
     <link href="style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="main-page">
-        <div class="title"><a href="index.html">folklore</a></div>
-        <div class="header">
-            <div>
-                current standing:
-                <div class="standing">
-                    village fool
-                    <span class="tooltip">as your tales are retold by the community your standing will improve</span>
+    <script src="js/grammar.js"></script>
+    <script src="js/rules.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <div class="main-container">
+        <div class="main-left">
+            MEMORY LOG
+            <div id="memory-log"></div>
+        </div>
+        <div class="main-center">
+            <div class="center-top" id="current-memory">
+            </div>
+            <div class="center-bottom">
+                <div id="current-room">ROOM ABC</div>
+
+                <div class="room-list">
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <br>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <br>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <br>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
+                    <a href="#" onclick="UpdateMemory()">A MEMORY</a>
                 </div>
             </div>
-            <ul class="nav">
-                <li><a href="hear-a-tale.html">hear a tale</a></li>
-                <li><a href="tell-a-tale.html">tell a tale</a></li>
-            </ul>
+        </div>
+        <div class="main-right">
+            <div class="right-top">
+                MEMORY ROOMS VISITED
+                <div id="room-log"></div>
+            </div>
+            <div class="right-bottom">
+                <b>YOU, THE MEMORIOUS</b>
+                <br>
+                this website has collected every memory you have ever had.
+                everything you feared you had forgotten is here.
+                relive your best moments. browse to your heart's content*.
+                <br>
+                shop like a bilionaire.
+                <br>
+                <div class="side-note">*prolonged use of this website may poison the memory pool.</div>
+            </div>
         </div>
     </div>
 
